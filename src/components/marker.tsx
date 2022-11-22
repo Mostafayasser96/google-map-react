@@ -1,5 +1,3 @@
-/* global google */
-import googleMapReact from 'google-map-react';
 import React from 'react';
 import Map from './map';
 

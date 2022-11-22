@@ -1,10 +1,7 @@
-/* global google */
 // the api key is : AIzaSyC_OWWY5Wo5BiW_xCcpA-mXVFsfMX2K9Hg
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import Marker from './marker';
-
-// import { env } from 'process';
+import DrawingManager from './drawingManager';
 
 const Map = () => {
   const defaultProps = {
@@ -15,6 +12,7 @@ const Map = () => {
     zoom: 11
   }
   console.log(process.env);
+
   return (
    <div className='map'>
     <GoogleMapReact 
@@ -22,9 +20,8 @@ const Map = () => {
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}
       yesIWantToUseGoogleMapApiInternals
-      onGoogleApiLoaded={ ({map, maps}) => Marker(map, maps) }
+      onGoogleApiLoaded={({map, maps}) => DrawingManager(map, maps)}  
     >
-    
     </GoogleMapReact>
    </div>
   )
