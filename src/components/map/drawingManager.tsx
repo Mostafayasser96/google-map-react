@@ -1,5 +1,3 @@
-import React from "react";
-
 const DrawingManager = (map: any, maps: any) => {
    const drawingManager = new google.maps.drawing.DrawingManager({
     drawingMode: google.maps.drawing.OverlayType.POLYGON,
