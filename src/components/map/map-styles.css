@@ -1,0 +1,26 @@
+.zone-form {
+  height: auto;
+  padding: 25px;
+}
+
+.form-label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sub-btn {
+  width: 70%;
+  margin-left: 15%;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.zone-name, .zone-color{
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
